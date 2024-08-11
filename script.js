@@ -20,7 +20,16 @@ function populateTable(moviesToShow) {
     moviesToShow.forEach(movie => {
         const row = tableBody.insertRow();
         row.insertCell(0).textContent = movie.nome;
-        row.insertCell(1).textContent = movie.tags.join(', ');
+        
+        const tagCell = row.insertCell(1);
+        movie.tags.forEach(tag => {
+            const tagSpan = document.createElement('span');
+            tagSpan.textContent = tag;
+            tagSpan.classList.add('tag');
+            tagSpan.classList.add(getTagClass(tag));
+            tagCell.appendChild(tagSpan);
+        });
+        
         row.insertCell(2).textContent = movie.genero;
     });
 }
@@ -54,9 +63,27 @@ function filterMovies() {
     populateTable(filteredMovies);
 }
 
+function getFilteredMovies() {
+    const genreFilter = document.getElementById('genreFilter').value;
+    const tagFilter = document.getElementById('tagFilter').value;
+
+    return movies.filter(movie => {
+        const matchesGenre = genreFilter === '' || movie.genero === genreFilter;
+        const matchesTag = tagFilter === '' || movie.tags.includes(tagFilter);
+        return matchesGenre && matchesTag;
+    });
+}
+
 function showRandomSelection() {
-    const randomIndex = Math.floor(Math.random() * movies.length);
-    const randomMovie = movies[randomIndex];
+    const filteredMovies = getFilteredMovies();
+    
+    if (filteredMovies.length === 0) {
+        alert("Nenhum filme ou série encontrado com os filtros atuais.");
+        return;
+    }
+
+    const randomIndex = Math.floor(Math.random() * filteredMovies.length);
+    const randomMovie = filteredMovies[randomIndex];
     
     const randomContent = document.getElementById('randomContent');
     randomContent.innerHTML = `
@@ -67,26 +94,6 @@ function showRandomSelection() {
 
     document.getElementById('mainTable').style.display = 'none';
     document.getElementById('randomSelection').style.display = 'block';
-}
-function populateTable(moviesToShow) {
-    const tableBody = document.getElementById('tableBody');
-    tableBody.innerHTML = '';
-
-    moviesToShow.forEach(movie => {
-        const row = tableBody.insertRow();
-        row.insertCell(0).textContent = movie.nome;
-        
-        const tagCell = row.insertCell(1);
-        movie.tags.forEach(tag => {
-            const tagSpan = document.createElement('span');
-            tagSpan.textContent = tag;
-            tagSpan.classList.add('tag');
-            tagSpan.classList.add(getTagClass(tag));
-            tagCell.appendChild(tagSpan);
-        });
-        
-        row.insertCell(2).textContent = movie.genero;
-    });
 }
 
 function getTagClass(tag) {
@@ -112,8 +119,6 @@ function getTagClass(tag) {
             return 'tag-default';
     }
 }
-
-
 
 document.getElementById('randomButton').addEventListener('click', showRandomSelection);
 document.getElementById('searchInput').addEventListener('input', filterMovies);
