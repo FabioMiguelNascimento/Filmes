@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button, select, input {
+    padding: 8px;
+    font-size: 14px;
+    border:none;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#randomSelection {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    display: grid !important;
+    place-content: center;
+}
+
+#NomeRandom{
+    font-size: 5rem;
+    background: rebeccapurple;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.tag-terror {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.tag-comedia {
+    background-color: #ffd966;
+    color: black;
+}
+
+.tag-romance {
+    background-color: #ff99cc;
+    color: black;
+}
+
+.tag-suspense {
+    background-color: #9900cc;
+    color: white;
+}
+
+.tag-ficcao {
+    background-color: #66ccff;
+    color: black;
+}
+
+.tag-acao {
+    background-color: #ff9933;
+    color: black;
+}
+
+.tag-desenho {
+    background-color: #99cc00;
+    color: black;
+}
+
+.tag-default {
+    background-color: #808080;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    #randomSelection {
+        display: block !important;
+        gap: 20px;
+    }
+
+    #NomeRandom{
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
