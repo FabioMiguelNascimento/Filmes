@@ -3,13 +3,13 @@ let allTags = new Set();
 
 async function loadMovies() {
   try {
-    const response = await fetch("data.json");
-    const data = await response.json();
-    movies = data.movies;
-    populateTable(movies);
-    populateTagFilter();
+      const response = await fetch('data.json');
+      const data = await response.json();
+      movies = data.movies;
+      populateTable(movies);
+      populateTagFilter();
   } catch (error) {
-    console.error("Erro ao carregar os dados:", error);
+      console.error('Erro ao carregar os dados:', error);
   }
 }
 
@@ -44,6 +44,20 @@ function populateTable(moviesToShow) {
     checkbox.addEventListener("change", () => updateMovieStatus(movie.id, checkbox.checked));
     checkboxCell.appendChild(checkbox);
     lazyLoadImages();
+  });
+}
+
+function populateTagFilter() {
+  movies.forEach(movie => {
+      movie.tags.forEach(tag => allTags.add(tag));
+  });
+
+  const tagFilter = document.getElementById('tagFilter');
+  allTags.forEach(tag => {
+      const option = document.createElement('option');
+      option.value = tag;
+      option.textContent = tag;
+      tagFilter.appendChild(option);
   });
 }
 
