@@ -1,66 +1,668 @@
 {
-    "movies": [
-      {"id": 1, "nome": "Long Legs", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 2, "nome": "KungFu Panda", "tags": ["COMEDIA", "DESENHO"], "genero": "FILME"},
-      {"id": 3, "nome": "MarrowBone", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 4, "nome": "DeadPool", "tags": ["COMEDIA", "TRILOGIA"], "genero": "FILME"},
-      {"id": 5, "nome": "Megumi", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 6, "nome": "O Segredo do Lago Mungo", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 7, "nome": "V/H/S 94", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 8, "nome": "Noroi", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 9, "nome": "Tarot", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 10, "nome": "A Proposta", "tags": ["COMEDIA", "ROMANCE"], "genero": "FILME"},
-      {"id": 11, "nome": "Como Perder um Homem em 10 Dias", "tags": ["ROMANCE"], "genero": "FILME"},
-      {"id": 12, "nome": "Como se Fosse a Primeira Vez", "tags": ["COMEDIA", "ROMANCE"], "genero": "FILME"},
-      {"id": 13, "nome": "Tres Dias e Uma Vida", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 14, "nome": "Crepusculo", "tags": ["COMEDIA", "FICÇÃO", "ROMANCE", "SUSPENSE", "TERROR", "TRILOGIA"], "genero": "FILME"},
-      {"id": 15, "nome": "Escondidos", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 16, "nome": "Macabre", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 17, "nome": "Misterio de Silver Lake", "tags": ["SUSPENSE"], "genero": "FILME"},
-      {"id": 18, "nome": "Supernatural", "tags": ["COMEDIA", "SUSPENSE", "TERROR"], "genero": "SERIE"},
-      {"id": 19, "nome": "Yellow Jackets", "tags": ["SUSPENSE"], "genero": "SERIE"},
-      {"id": 20, "nome": "Swallow Full", "tags": ["SUSPENSE"], "genero": "FILME"},
-      {"id": 21, "nome": "Late Night With the Devil", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 22, "nome": "O Homem dos Sonhos", "tags": ["COMEDIA", "TERROR"], "genero": "FILME"},
-      {"id": 23, "nome": "Sleep Tight", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 24, "nome": "The Descent", "tags": ["TERROR"], "genero": "FILME"},
-      {"id": 25, "nome": "Young Sheldon", "tags": ["COMEDIA"], "genero": "SERIE"},
-      {"id": 26, "nome": "The Walking Dead", "tags": ["FICÇÃO", "SUSPENSE", "ZOMBIE"], "genero": "SERIE"},
-      {"id": 27, "nome": "Grimm", "tags": ["TERROR"], "genero": "SERIE"},
-      {"id": 28, "nome": "Reacher", "tags": ["SUSPENSE"], "genero": "SERIE"},
-      {"id": 29, "nome": "Stranger Things", "tags": ["SUSPENSE", "TERROR"], "genero": "SERIE"},
-      {"id": 30, "nome": "Game Of Thrones", "tags": ["FICÇÃO"], "genero": "SERIE"},
-      {"id": 31, "nome": "Gilmore Girls", "tags": ["COMEDIA"], "genero": "SERIE"},
-      {"id": 32, "nome": "Seinfield", "tags": ["COMEDIA", "SITCOM"], "genero": "SERIE"},
-      {"id": 33, "nome": "Friends", "tags": ["COMEDIA", "SITCOM"], "genero": "SERIE"},
-      {"id": 34, "nome": "The Big Bang Theorie", "tags": ["COMEDIA", "SITCOM"], "genero": "SERIE"},
-      {"id": 35, "nome": "Derry Girls", "tags": ["COMEDIA", "SITCOM"], "genero": "SERIE"},
-      {"id": 36, "nome": "The Haunting of Hill House", "tags": ["TERROR"], "genero": "SERIE"},
-      {"id": 37, "nome": "The Comunnity", "tags": ["COMEDIA"], "genero": "SERIE"},
-      {"id": 38, "nome": "A Maldicao da Mansao Bly", "tags": ["TERROR"], "genero": "SERIE"},
-      {"id": 39, "nome": "Senhor dos Aneis", "tags": ["FICÇÃO", "TRILOGIA"], "genero": "FILME"},
-      {"id": 40, "nome": "Piratas dos Caribe", "tags": ["FICÇÃO", "TRILOGIA"], "genero": "FILME"},
-      {"id": 41, "nome": "Harry Potter", "tags": ["FICÇÃO", "MAGIA", "TRILOGIA"], "genero": "FILME"},
-      {"id": 42, "nome": "Star Wars", "tags": ["ESPAÇO", "FICÇÃO", "TRILOGIA"], "genero": "FILME"},
-      {"id": 44, "nome": "Sex and the City", "tags": ["ROMANCE"], "genero": "SERIE"},
-      {"id": 46, "nome": "Marvel", "tags": ["AÇÃO", "FICÇÃO", "HERÓI", "TRILOGIA"], "genero": "FILME"},
-      {"id": 47, "nome": "Death Note", "tags": ["DESENHO", "TERROR"], "genero": "SERIE"},
-      {"id": 48, "nome": "Grays Anatomy", "tags": ["SITCOM"], "genero": "SERIE"},
-      {"id": 49, "nome": "DARK", "tags": ["MAGIA", "SUSPENSE", "TERROR"], "genero": "SERIE"},
-      {"id": 50, "nome": "Vikings", "tags": ["AÇÃO", "FICÇÃO"], "genero": "SERIE"},
-      {"id": 51, "nome": "Mr Robot", "tags": ["FICÇÃO", "SUSPENSE"], "genero": "FILME"},
-      {"id": 52, "nome": "The Midnight Gospel", "tags": ["DESENHO"], "genero": "SERIE"},
-      {"id": 64, "nome": "Saw", "tags": ["TERROR", "TRILOGIA"], "genero": "FILME"},
-      {"id": 61, "nome": "Invincible", "tags": ["DESENHO", "HERÓI"], "genero": "SERIE"},
-      {"id": 62, "nome": "Black Phone", "tags": ["SUSPENSE", "TERROR"], "genero": "FILME"},
-      {"id": 63, "nome": "Terrifier", "tags": ["TERROR", "TRILOGIA"], "genero": "FILME"},
-      {"id": 53, "nome": "Sweet Home", "tags": ["FICÇÃO", "ZOMBIE"], "genero": "SERIE"},
-      {"id": 54, "nome": "Bebe Rena", "tags": ["SUSPENSE"], "genero": "SERIE"},
-      {"id": 55, "nome": "Peak Blinders", "tags": ["AÇÃO", "SUSPENSE"], "genero": "SERIE"},
-      {"id": 56, "nome": "Parasite", "tags": ["SUSPENSE", "TERROR"], "genero": "FILME"},
-      {"id": 57, "nome": "Avatar", "tags": ["DESENHO", "FICÇÃO", "MAGIA"], "genero": "SERIE"},
-      {"id": 58, "nome": "De Repente 30", "tags": ["FICÇÃO"], "genero": "FILME"},
-      {"id": 59, "nome": "Eu, Tonya", "tags": ["COMEDIA"], "genero": "FILME"},
-      {"id": 60, "nome": "Meu Malvado Favorito 4", "tags": ["COMEDIA", "DESENHO"], "genero": "FILME"}
-    ]
-  }
+  "movies": [
+    {
+      "id": 1,
+      "nome": "Long Legs",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/long-legs.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "KungFu Panda",
+      "tags": [
+        "COMEDIA",
+        "DESENHO"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/kungfu-panda.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "MarrowBone",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/marrowbone.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "DeadPool",
+      "tags": [
+        "COMEDIA",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/deadpool.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Megumi",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/megumi.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "O Segredo do Lago Mungo",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/lago-mungo.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "V/H/S 94",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/vhs-94.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Noroi",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/noroi.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Tarot",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/tarot.jpg"
+    },
+    {
+      "id": 10,
+      "nome": "A Proposta",
+      "tags": [
+        "COMEDIA",
+        "ROMANCE"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/a-proposta.jpg"
+    },
+    {
+      "id": 11,
+      "nome": "Como Perder um Homem em 10 Dias",
+      "tags": [
+        "ROMANCE"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/como-perder-um-homem-em-10-dias.jpg"
+    },
+    {
+      "id": 12,
+      "nome": "Como se Fosse a Primeira Vez",
+      "tags": [
+        "COMEDIA",
+        "ROMANCE"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/como-se-fosse-a-primeira-vez.jpg"
+    },
+    {
+      "id": 13,
+      "nome": "Tres Dias e Uma Vida",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/tres-dias-e-uma-vida.jpg"
+    },
+    {
+      "id": 14,
+      "nome": "Crepusculo",
+      "tags": [
+        "COMEDIA",
+        "FICÇÃO",
+        "ROMANCE",
+        "SUSPENSE",
+        "TERROR",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/crepusculo.jpg"
+    },
+    {
+      "id": 15,
+      "nome": "Escondidos",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/escondidos.jpg"
+    },
+    {
+      "id": 16,
+      "nome": "Macabre",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/macabre.jpg"
+    },
+    {
+      "id": 17,
+      "nome": "Misterio de Silver Lake",
+      "tags": [
+        "SUSPENSE"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/misterio-de-silver-lake.jpg"
+    },
+    {
+      "id": 18,
+      "nome": "Supernatural",
+      "tags": [
+        "COMEDIA",
+        "SUSPENSE",
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/supernatural.jpg"
+    },
+    {
+      "id": 19,
+      "nome": "Yellow Jackets",
+      "tags": [
+        "SUSPENSE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/yellow-jackets.jpg"
+    },
+    {
+      "id": 20,
+      "nome": "Swallow Full",
+      "tags": [
+        "SUSPENSE"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/swallow-full.jpg"
+    },
+    {
+      "id": 21,
+      "nome": "Late Night With the Devil",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": true,
+      "cover": "./covers/late-night-with-the-devil.jpg"
+    },
+    {
+      "id": 22,
+      "nome": "O Homem dos Sonhos",
+      "tags": [
+        "COMEDIA",
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/o-homem-dos-sonhos.jpg"
+    },
+    {
+      "id": 23,
+      "nome": "Sleep Tight",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/sleep-tight.jpg"
+    },
+    {
+      "id": 24,
+      "nome": "The Descent",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/the-descent.jpg"
+    },
+    {
+      "id": 25,
+      "nome": "Young Sheldon",
+      "tags": [
+        "COMEDIA"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/young-sheldon.jpg"
+    },
+    {
+      "id": 26,
+      "nome": "The Walking Dead",
+      "tags": [
+        "FICÇÃO",
+        "SUSPENSE",
+        "ZOMBIE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/the-walking-dead.jpg"
+    },
+    {
+      "id": 27,
+      "nome": "Grimm",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/grimm.jpg"
+    },
+    {
+      "id": 28,
+      "nome": "Reacher",
+      "tags": [
+        "SUSPENSE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/reacher.jpg"
+    },
+    {
+      "id": 29,
+      "nome": "Stranger Things",
+      "tags": [
+        "SUSPENSE",
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/stranger-things.jpg"
+    },
+    {
+      "id": 30,
+      "nome": "Game Of Thrones",
+      "tags": [
+        "FICÇÃO"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/game-of-thrones.jpg"
+    },
+    {
+      "id": 31,
+      "nome": "Gilmore Girls",
+      "tags": [
+        "COMEDIA"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/Gilmore-girls.jpg"
+    },
+    {
+      "id": 32,
+      "nome": "Seinfield",
+      "tags": [
+        "COMEDIA",
+        "SITCOM"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/seinfield.jpg"
+    },
+    {
+      "id": 33,
+      "nome": "Friends",
+      "tags": [
+        "COMEDIA",
+        "SITCOM"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/friends.jpg"
+    },
+    {
+      "id": 34,
+      "nome": "The Big Bang Theorie",
+      "tags": [
+        "COMEDIA",
+        "SITCOM"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/the-big-bang-theorie.jpg"
+    },
+    {
+      "id": 35,
+      "nome": "Derry Girls",
+      "tags": [
+        "COMEDIA",
+        "SITCOM"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/Derry-Grils.jpg"
+    },
+    {
+      "id": 36,
+      "nome": "The Haunting of Hill House",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/the-haunting-of-hill-house.jpg"
+
+    },
+    {
+      "id": 37,
+      "nome": "The Comunnity",
+      "tags": [
+        "COMEDIA"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/the-comunnity.jpg"
+    },
+    {
+      "id": 38,
+      "nome": "A Maldicao da Mansao Bly",
+      "tags": [
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/a-maldicao-da-mansao-bly.jpg"
+    },
+    {
+      "id": 39,
+      "nome": "Senhor dos Aneis",
+      "tags": [
+        "FICÇÃO",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/senhor-dos-aneis.jpg"
+    },
+    {
+      "id": 40,
+      "nome": "Piratas dos Caribe",
+      "tags": [
+        "FICÇÃO",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/piratas-dos-caribe.jpg"
+    },
+    {
+      "id": 41,
+      "nome": "Harry Potter",
+      "tags": [
+        "FICÇÃO",
+        "MAGIA",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/harry-potter.jpg"
+    },
+    {
+      "id": 42,
+      "nome": "Star Wars",
+      "tags": [
+        "ESPAÇO",
+        "FICÇÃO",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/star-wars.jpg"
+    },
+    {
+      "id": 44,
+      "nome": "Sex and the City",
+      "tags": [
+        "ROMANCE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/Sex-and-the-City.jpg"
+    },
+    {
+      "id": 46,
+      "nome": "Marvel",
+      "tags": [
+        "AÇÃO",
+        "FICÇÃO",
+        "HERÓI",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/marvel.jpg"
+    },
+    {
+      "id": 47,
+      "nome": "Death Note",
+      "tags": [
+        "DESENHO",
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/death-note.jpg"
+    },
+    {
+      "id": 48,
+      "nome": "Greys Anatomy",
+      "tags": [
+        "SITCOM"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/greys-anatomy.jpg"
+    },
+    {
+      "id": 49,
+      "nome": "DARK",
+      "tags": [
+        "MAGIA",
+        "SUSPENSE",
+        "TERROR"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/dark.jpg"
+    },
+    {
+      "id": 50,
+      "nome": "Vikings",
+      "tags": [
+        "AÇÃO",
+        "FICÇÃO"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/vikings.jpg"
+    },
+    {
+      "id": 51,
+      "nome": "Mr Robot",
+      "tags": [
+        "FICÇÃO",
+        "SUSPENSE"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/mr-robot.jpg"
+    },
+    {
+      "id": 52,
+      "nome": "The Midnight Gospel",
+      "tags": [
+        "DESENHO"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/the-midnight-gospel.jpg"
+    },
+    {
+      "id": 53,
+      "nome": "Saw",
+      "tags": [
+        "TERROR",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/saw.jpg"
+    },
+    {
+      "id": 54,
+      "nome": "Invincible",
+      "tags": [
+        "DESENHO",
+        "HERÓI"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/invincible.jpg"
+    },
+    {
+      "id": 55,
+      "nome": "Black Phone",
+      "tags": [
+        "SUSPENSE",
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/black-phone.jpg"
+    },
+    {
+      "id": 56,
+      "nome": "Terrifier",
+      "tags": [
+        "TERROR",
+        "TRILOGIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/terrifier.jpg"
+    },
+    {
+      "id": 57,
+      "nome": "Sweet Home",
+      "tags": [
+        "FICÇÃO",
+        "ZOMBIE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/sweet-home.jpg"
+    },
+    {
+      "id": 58,
+      "nome": "Bebe Rena",
+      "tags": [
+        "SUSPENSE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/bebe-rena.jpg"
+    },
+    {
+      "id": 59,
+      "nome": "Peak Blinders",
+      "tags": [
+        "AÇÃO",
+        "SUSPENSE"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/peak-blinders.jpg"
+    },
+    {
+      "id": 60,
+      "nome": "Parasite",
+      "tags": [
+        "SUSPENSE",
+        "TERROR"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/parasite.jpg"
+    },
+    {
+      "id": 61,
+      "nome": "Avatar",
+      "tags": [
+        "DESENHO",
+        "FICÇÃO",
+        "MAGIA"
+      ],
+      "genero": "SERIE",
+      "visto": false,
+      "cover": "./covers/avatar.jpg"
+    },
+    {
+      "id": 62,
+      "nome": "De Repente 30",
+      "tags": [
+        "FICÇÃO"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/de-repente-30.jpg"
+    },
+    {
+      "id": 63,
+      "nome": "Eu, Tonya",
+      "tags": [
+        "COMEDIA"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/eu-tonya.jpg"
+    },
+    {
+      "id": 64,
+      "nome": "Meu Malvado Favorito 4",
+      "tags": [
+        "COMEDIA",
+        "DESENHO"
+      ],
+      "genero": "FILME",
+      "visto": false,
+      "cover": "./covers/meu-malvado-favorito-4.jpg"
+    }
+  ]
+}

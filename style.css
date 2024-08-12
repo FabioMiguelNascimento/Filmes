@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1635400138431-0bbde4d01484?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center/cover;
 }
 
 header {
@@ -36,10 +37,10 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
@@ -49,33 +50,71 @@ th {
     color: white;
 }
 
+tr{
+    background-color: #dedede;
+
+}
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
-#randomSelection {
-    background-color: #fff;
-    border: 1px solid #ddd;
+#randomContent {
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
     padding: 20px;
-    margin-top: 20px;
-    display: grid !important;
-    place-content: center;
+    text-align: center;
 }
 
-#NomeRandom{
-    font-size: 5rem;
-    background: rebeccapurple;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
+.randomImg {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+    outline: dashed 5px black;
+    transition: 200ms;
+    display: block;
+    margin: 0 auto;
+}
+
+.randomDiv{
+    grid-area: content;
+    & #NomeRandom{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    & .randomGenero{
+        font-size: 1.2rem;
+    }
+    & i {
+        background: gold;
+        padding: 3px;
+        border-radius: 2px;
+        color: black;
+    }
 }
 
 .tag {
-    display: inline-block;
+    grid-area: tags;
+    display: inline-flex;
+    align-items: center;
     padding: 2px 6px;
     margin: 2px;
     border-radius: 3px;
     font-size: 0.8em;
+}
+
+.tag-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
 }
 
 .tag-terror {
@@ -118,14 +157,57 @@ tr:nth-child(even) {
     color: white;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+    & .tag{
+        text-decoration: line-through;
+    }
+    background: rgb(38, 188, 38) !important;
+}
+img.lazy-load {
+    width: 100px;  /* ou o tamanho que preferir */
+    height: 150px; /* mantenha a proporção adequada */
+    background-color: #f0f0f0; /* cor de placeholder */
+  }
+
+img {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  img.lazy-load {
+    opacity: 0;
+  }
+  
+  img:not(.lazy-load) {
+    opacity: 1;
+  }
+
 @media (max-width: 600px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+    main{
+        padding: 10px;
+    }
     .controls {
         flex-direction: column;
     }
 
-    #randomSelection {
-        display: block !important;
-        gap: 20px;
+    #randomContent {
+        grid-template-areas: 
+            "img"
+            "content";
+        gap: 10px;
+        align-content: center;
+    }
+
+    .randomDiv{
+        text-align: center;
+    }
+
+    .randomImg{
+        width: 200px;
+        height: 300px;
     }
 
     #NomeRandom{
