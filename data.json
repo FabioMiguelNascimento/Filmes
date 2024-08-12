@@ -60,6 +60,7 @@
       {"id": 56, "nome": "Parasite", "tags": ["SUSPENSE", "TERROR"], "genero": "FILME"},
       {"id": 57, "nome": "Avatar", "tags": ["DESENHO", "FICÇÃO", "MAGIA"], "genero": "SERIE"},
       {"id": 58, "nome": "De Repente 30", "tags": ["FICÇÃO"], "genero": "FILME"},
-      {"id": 59, "nome": "Eu, Tonya", "tags": ["COMEDIA"], "genero": "FILME"}
+      {"id": 59, "nome": "Eu, Tonya", "tags": ["COMEDIA"], "genero": "FILME"},
+      {"id": 60, "nome": "Meu Malvado Favorito 4", "tags": ["COMEDIA", "DESENHO"], "genero": "FILME"}
     ]
   }
