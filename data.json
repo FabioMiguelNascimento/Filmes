@@ -110,7 +110,7 @@
         "ROMANCE"
       ],
       "genero": "FILME",
-      "visto": false,
+      "visto": true,
       "cover": "./covers/como-perder-um-homem-em-10-dias.jpg"
     },
     {
