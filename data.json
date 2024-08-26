@@ -7,7 +7,7 @@
         "TERROR"
       ],
       "genero": "FILME",
-      "visto": false,
+      "visto": true,
       "cover": "./covers/long-legs.jpg"
     },
     {
